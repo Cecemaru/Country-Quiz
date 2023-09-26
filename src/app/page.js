@@ -127,7 +127,7 @@ const Home = () => {
 
   return (
     <div className="h-screen mx-auto max-w-[30rem] flex flex-col justify-center gap-5 px-2">
-      <h1 className="uppercase text-4xl font-bold">Country Quiz</h1>
+      <h1 className="uppercase text-2xl font-bold sm:text-4xl">Country Quiz</h1>
 
       <div
         className={`animete-custom bg-white text-blue-300 px-8  rounded-3xl`}
@@ -147,7 +147,9 @@ const Home = () => {
             {quizData.image && (
               <img className="w-24 mb-6" src={quizData.image} alt="Flag" />
             )}
-            <p className="text-2xl font-bold mb-8">{quizData.question}</p>
+            <p className="text-xl sm:text-2xl font-bold mb-8">
+              {quizData.question}
+            </p>
             <ul>
               {quizData.choices.map((choice, index) => (
                 <li
